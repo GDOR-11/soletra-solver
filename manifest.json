@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "soletra solver",
+    "description": "an automatic solver for a game my friend likes lol",
+    "version": "1.0",
+    "action": {
+        "default_icon": {
+            "16": "icons/icon-16.png",
+            "24": "icons/icon-24.png",
+            "32": "icons/icon-32.png",
+            "48": "icons/icon-48.png",
+            "128": "icons/icon-128.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/solver.js",
+                "scripts/ui-injector.js"
+            ],
+            "matches": [
+                "https://g1.globo.com/jogos/soletra/"
+            ]
+        }
+    ]
+}
